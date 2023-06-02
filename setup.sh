@@ -233,17 +233,17 @@ fi
 curl -sS ipv4.icanhazip.com > /etc/myipvps
 echo " "
 echo "==============================================================================="
-echo "${purple}      ___                                    ___         ___     ${NC}"  | tee -a log-install.txt
-echo "${purple}     /  /\        ___           ___         /  /\       /__/\    ${NC}"  | tee -a log-install.txt
-echo "${purple}    /  /:/_      /  /\         /__/\       /  /::\      \  \:\   ${NC}"  | tee -a log-install.txt
-echo "${purple}   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\  ${NC}"  | tee -a log-install.txt
-echo "${purple}  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\ ${NC}"  | tee -a log-install.txt
-echo "${purple} /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\${NC}"  | tee -a log-install.txt
-echo "${purple} \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/${NC}"  | tee -a log-install.txt
-echo "${purple}  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~ ${NC}"  | tee -a log-install.txt
-echo "${purple}   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\     ${NC}"  | tee -a log-install.txt
-echo "${purple}    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\    ${NC}"  | tee -a log-install.txt
-echo "${purple}     \__\/                       ~~~~       \__\/       \__\/    ${NC}"  | tee -a log-install.txt
+echo "${purple}      ___                                    ___         ___      ${NC}"  | tee -a log-install.txt
+echo "${purple}     /  /\        ___           ___         /  /\       /__/\     ${NC}"  | tee -a log-install.txt
+echo "${purple}    /  /:/_      /  /\         /__/\       /  /::\      \  \:\    ${NC}"  | tee -a log-install.txt
+echo "${purple}   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\   ${NC}"  | tee -a log-install.txt
+echo "${purple}  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\  ${NC}"  | tee -a log-install.txt
+echo "${purple} /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\ ${NC}"  | tee -a log-install.txt
+echo "${purple} \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/ ${NC}"  | tee -a log-install.txt
+echo "${purple}  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~  ${NC}"  | tee -a log-install.txt
+echo "${purple}   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\      ${NC}"  | tee -a log-install.txt
+echo "${purple}    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\     ${NC}"  | tee -a log-install.txt
+echo "${purple}     \__\/                       ~~~~       \__\/       \__\/     ${NC}"  | tee -a log-install.txt
 echo "==============================================================================="
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
