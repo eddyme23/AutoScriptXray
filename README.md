@@ -6,7 +6,7 @@
 </div>
 
 # Required
-- DOMAIN
+- DOMAIN (WAJIB)
 - DEBIAN 9/10
 - Ubuntu 18/20 LTS
 - CPU MIN 1 CORE
@@ -33,7 +33,7 @@
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
-- Izin dulu sebelum install gratis
+- Izin dulu sebelum install (GRATIS)
 # Telegram
 [![Telegram-chat](https://raw.githubusercontent.com/givpn/telegram-button/main/chat-telegram.png)](https://t.me/givpn/)
 [![Telegram-grup](https://raw.githubusercontent.com/givpn/telegram-button/main/grup-telegram.png)](https://t.me/givpn_grup)
