@@ -43,6 +43,7 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 
 # Donation Thanks for your support me
 [![Saweria donate button](https://raw.githubusercontent.com/givpn/donation-button/main/saweria.png)](https://saweria.co/givpn11)
+[![PayPal donate button](https://raw.githubusercontent.com/givpn/donation-button/main/paypal.png)](https://paypal.me/givpn11)
 [![Ko-fi donate button](https://raw.githubusercontent.com/givpn/donation-button/main/ko-fi.png)](https://ko-fi.com/givpn11)
 
 # LICENSE
