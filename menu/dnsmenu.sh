@@ -32,7 +32,7 @@ echo -e " [\e[36m•3\e[0m] Back To Main Menu"
 echo -e ""
 read -p "Select From Options [ 1 - 3 ] :  " dns
 echo -e ""
-echo -e "======================================"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 case $dns in
 1)
 clear
