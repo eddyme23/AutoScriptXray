@@ -306,6 +306,7 @@ wget -O bw "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/b
 wget -O m-tcp "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/tcp.sh"
 wget -O xp "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/xp.sh"
 wget -O sshws "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/sshws.sh"
+wget -O m-dns "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/m-dns.sh"
 
 chmod +x menu
 chmod +x m-vmess
@@ -339,6 +340,7 @@ chmod +x bw
 chmod +x m-tcp
 chmod +x xp
 chmod +x sshws
+chmod +x m-dns
 cd
 
 
