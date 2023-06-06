@@ -16,8 +16,9 @@ wh="\033[0m"
 MYIP=$(wget -qO- ipv4.icanhazip.com);
 echo "Checking VPS"
 clear
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e "$y            DNS CHANGER$wh"
-echo -e "======================================"
+echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 dnsfile="/root/dns"
 if test -f "$dnsfile"; then
 udns=$(cat /root/dns)
@@ -25,9 +26,9 @@ echo -e ""
 echo -e "Active DNS : $udns"
 fi
 echo -e ""
-echo -e "[1]. CHANGE DNS"
-echo -e "[2]. Reset DNS To Default"
-echo -e "[3]. Back To Main Menu"
+echo -e " [\e[36m•1\e[0m] CHANGE DNS"
+echo -e " [\e[36m•2\e[0m] Reset DNS To Default"
+echo -e " [\e[36m•3\e[0m] Back To Main Menu"
 echo -e ""
 read -p "Select From Options [ 1 - 3 ] :  " dns
 echo -e ""
@@ -67,15 +68,15 @@ read -p "Reset To Default DNS [Y/N]: " -e answer
 if [ "$answer" = 'y' ] || [ "$answer" = 'Y' ]; then
 rm /root/dns
 echo ""
-echo -e "[ ${BLUE}INFO${NC} ] Delete Resolv.conf DNS"
+echo -e "[ ${GREEN}INFO${NC} ] Delete Resolv.conf DNS"
 echo "nameserver 8.8.8.8" > /etc/resolv.conf
 sleep 1
-echo -e "[ ${BLUE}INFO${NC} ] Delete Resolv.conf.d/head DNS"
+echo -e "[ ${GREEN}INFO${NC} ] Delete Resolv.conf.d/head DNS"
 echo "nameserver 8.8.8.8" > /etc/resolvconf/resolv.conf.d/head
 sleep 1
 else if [ "$answer" = 'n' ] || [ "$answer" = 'N' ]; then
 echo -e ""
-echo -e "[ ${BLUE}INFO${NC} ]  Operation Cancelled By User"
+echo -e "[ ${GREEN}INFO${NC} ]  Operation Cancelled By User"
 sleep 1
 fi
 fi
