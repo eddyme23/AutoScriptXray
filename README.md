@@ -24,6 +24,9 @@
 - UNDER ATTACK MODE : OFF<br>
 <br>
 
+# Pointing
+![Pointing](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/pointing.png)
+
 ## Service & Port:
 <br>
 - SSH Websocket : 80<br>
