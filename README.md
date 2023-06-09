@@ -14,6 +14,16 @@
 - RAM 1GB<br>
 <br>
 
+# Setting Cloudflare
+<br>
+- SSL/TLS : FULL<br>
+- SSL/TLS Recommender : OFF<br>
+- GRPC : ON<br>
+- WEBSOCKET : ON<br>
+- Always Use HTTPS : OFF<br>
+- UNDER ATTACK MODE : OFF<br>
+<br>
+
 ## Service & Port:
 <br>
 - SSH Websocket : 80<br>
