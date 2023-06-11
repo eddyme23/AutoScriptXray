@@ -66,6 +66,10 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 # Permission first before install (FREE)
 
 # Enable root
+```
+apt update && apt install -y wget && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/autoscriptxray/master/rootvps.sh && bash rootvps.sh
+  
+```
   
 # Telegram
 [![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
