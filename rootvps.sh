@@ -11,20 +11,19 @@ NC='\e[0m'
 wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/givpn/autoscriptxray/master/sshd_config;
 systemctl restart sshd;
 clear;
-read -p "Enter Password : " passwd
 clear
-if [[ ! -z "${passwd}" ]]; then
+if
 echo ""
 echo -e "\e[1;31m Please Save This VPS Account Information\e[0m"
 echo -e "\e[1;34m------------------------------------------\e[0m"
-echo -e "\e[1;34mRoot Account (Main Account)\e[0m"
 echo -e "\e[1;34mIp address \e[0m = $MYIP"
-echo -e "\e[1;34mPort       \e[0m = 22 or 657"
+echo -e "\e[1;34mPort SSH   \e[0m = 22 or 657"
 echo -e "\e[1;34mUsername   \e[0m = root"
-echo -e "\e[1;34mPassword   \e[0m = $passwd"
 echo -e "\e[1;34m-------------------------------------------"
+echo -e "\e[1;34m    Successfully enable root...!!!\e[0m"
 echo ""
 read -n 1 -s -r -p "Press any key to exit"
 rm -rf rootvps.sh
 exit
+cd
 fi
