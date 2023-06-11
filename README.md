@@ -66,6 +66,11 @@ sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.di
 # Permission first before install (FREE)
 
 # Enable root
+- Step 1
+```
+sudo su
+```
+- Step 2
 ```
 apt update && apt install -y wget && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/autoscriptxray/master/rootvps.sh && bash rootvps.sh
   
