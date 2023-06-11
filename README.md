@@ -76,7 +76,7 @@ cd
 ```
 - Step 3
 ```
-apt update && apt install -y wget && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/autoscriptxray/master/rootvps.sh && bash rootvps.sh
+apt update && apt install wget -y && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/autoscriptxray/master/rootvps.sh && bash rootvps.sh
   
 ```
 - Step 4 done your success enable root
