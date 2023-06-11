@@ -232,19 +232,19 @@ gg="AM"
 fi
 curl -sS ipv4.icanhazip.com > /etc/myipvps
 echo " "
-echo "==============================================================================="
-echo "${purple}      ___                                    ___         ___      ${NC}"  | tee -a log-install.txt
-echo "${purple}     /  /\        ___           ___         /  /\       /__/\     ${NC}"  | tee -a log-install.txt
-echo "${purple}    /  /:/_      /  /\         /__/\       /  /::\      \  \:\    ${NC}"  | tee -a log-install.txt
-echo "${purple}   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\   ${NC}"  | tee -a log-install.txt
-echo "${purple}  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\  ${NC}"  | tee -a log-install.txt
-echo "${purple} /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\ ${NC}"  | tee -a log-install.txt
-echo "${purple} \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/ ${NC}"  | tee -a log-install.txt
-echo "${purple}  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~  ${NC}"  | tee -a log-install.txt
-echo "${purple}   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\      ${NC}"  | tee -a log-install.txt
-echo "${purple}    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\     ${NC}"  | tee -a log-install.txt
-echo "${purple}     \__\/                       ~~~~       \__\/       \__\/     ${NC}"  | tee -a log-install.txt
-echo "==============================================================================="
+echo "=================================================================="  | tee -a log-install.txt
+echo "      ___                                    ___         ___      "  | tee -a log-install.txt
+echo "     /  /\        ___           ___         /  /\       /__/\     "  | tee -a log-install.txt
+echo "    /  /:/_      /  /\         /__/\       /  /::\      \  \:\    "  | tee -a log-install.txt
+echo "   /  /:/ /\    /  /:/         \  \:\     /  /:/\:\      \  \:\   "  | tee -a log-install.txt
+echo "  /  /:/_/::\  /__/::\          \  \:\   /  /:/~/:/  _____\__\:\  "  | tee -a log-install.txt
+echo " /__/:/__\/\:\ \__\/\:\__   ___  \__\:\ /__/:/ /:/  /__/::::::::\ "  | tee -a log-install.txt
+echo " \  \:\ /~~/:/    \  \:\/\ /__/\ |  |:| \  \:\/:/   \  \:\~~\~~\/ "  | tee -a log-install.txt
+echo "  \  \:\  /:/      \__\::/ \  \:\|  |:|  \  \::/     \  \:\  ~~~  "  | tee -a log-install.txt
+echo "   \  \:\/:/       /__/:/   \  \:\__|:|   \  \:\      \  \:\      "  | tee -a log-install.txt
+echo "    \  \::/        \__\/     \__\::::/     \  \:\      \  \:\     "  | tee -a log-install.txt
+echo "     \__\/                       ~~~~       \__\/       \__\/ 1.0 "  | tee -a log-install.txt
+echo "=================================================================="  | tee -a log-install.txt
 echo ""
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - OpenSSH                  : 22"  | tee -a log-install.txt
@@ -267,9 +267,9 @@ echo "   - Vless gRPC               : 443" | tee -a log-install.txt
 echo "   - Trojan gRPC              : 443" | tee -a log-install.txt
 echo "   - Shadowsocks gRPC         : 443" | tee -a log-install.txt
 echo ""
-echo "==============================================================================="
-echo "==================================t.me/givpn==================================="
-echo "==============================================================================="
+echo "=============================Contact==============================" | tee -a log-install.txt
+echo "---------------------------t.me/givpn-----------------------------" | tee -a log-install.txt
+echo "==================================================================" | tee -a log-install.txt
 echo -e ""
 echo ""
 echo "" | tee -a log-install.txt
