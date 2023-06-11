@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS https://raw.githubusercontent.com/givpn/izin/master/AutoScriptXray > /root/tmp
+    curl -sS ipv4.icanhazip.com > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -21,7 +21,7 @@ BURIQ () {
     rm -f  /root/tmp
 }
 MYIP=$(curl -sS ipv4.icanhazip.com)
-Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/AutoScriptXray | grep $MYIP | awk '{print $2}')
+Name=$givpn
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
 
@@ -38,7 +38,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/AutoScriptXray | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS ipv4.icanhazip.com | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
@@ -52,6 +52,9 @@ red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
 tyblue='\e[1;36m'
+BRed='\e[1;31m'
+BGreen='\e[1;32m'
+BBlue='\e[1;34m'
 NC='\e[0m'
 purple() { echo -e "\\033[35;1m${*}\\033[0m"; }
 tyblue() { echo -e "\\033[36;1m${*}\\033[0m"; }
@@ -84,11 +87,11 @@ touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
 
 
-echo -e "[ ${tyblue}NOTES${NC} ] Before we go.. "
+echo -e "[ ${BBlue}NOTES${NC} ] Before we go.. "
 sleep 0.5
-echo -e "[ ${tyblue}NOTES${NC} ] I need check your headers first.."
+echo -e "[ ${BBlue}NOTES${NC} ] I need check your headers first.."
 sleep 0.5
-echo -e "[ ${green}INFO${NC} ] Checking headers"
+echo -e "[ ${BGreen}INFO${NC} ] Checking headers"
 sleep 0.5
 totet=`uname -r`
 REQUIRED_PKG="linux-headers-$totet"
@@ -96,27 +99,27 @@ PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok
 echo Checking for $REQUIRED_PKG: $PKG_OK
 if [ "" = "$PKG_OK" ]; then
   sleep 0.5
-  echo -e "[ ${yell}WARNING${NC} ] Try to install ...."
+  echo -e "[ ${BRed}WARNING${NC} ] Try to install ...."
   echo "No $REQUIRED_PKG. Setting up $REQUIRED_PKG."
   apt-get --yes install $REQUIRED_PKG
   sleep 0.5
   echo ""
   sleep 0.5
-  echo -e "[ ${tyblue}NOTES${NC} ] If error you need.. to do this"
+  echo -e "[ ${BBlue}NOTES${NC} ] If error you need.. to do this"
   sleep 0.5
   echo ""
   sleep 0.5
-  echo -e "[ ${tyblue}NOTES${NC} ] apt update && upgrade"
+  echo -e "[ ${BBlue}NOTES${NC} ] apt update && upgrade"
   sleep 0.5
   echo ""
   sleep 0.5
-  echo -e "[ ${tyblue}NOTES${NC} ] After this"
+  echo -e "[ ${BBlue}NOTES${NC} ] After this"
   sleep 0.5
-  echo -e "[ ${tyblue}NOTES${NC} ] Then run this script again"
-  echo -e "[ ${tyblue}NOTES${NC} ] enter now"
+  echo -e "[ ${BBlue}NOTES${NC} ] Then run this script again"
+  echo -e "[ ${BBlue}NOTES${NC} ] enter now"
   read
 else
-  echo -e "[ ${green}INFO${NC} ] Oke installed"
+  echo -e "[ ${BGreen}INFO${NC} ] Oke installed"
 fi
 
 ttet=`uname -r`
@@ -137,21 +140,21 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 >/dev/null 2>&1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1 >/dev/null 2>&1
 
-echo -e "[ ${green}INFO${NC} ] Preparing the install file"
+echo -e "[ ${BGreen}INFO${NC} ] Preparing the install file"
 apt install git curl -y >/dev/null 2>&1
 apt install python -y >/dev/null 2>&1
-echo -e "[ ${green}INFO${NC} ] Aight good ... installation file is ready"
+echo -e "[ ${BGreen}INFO${NC} ] Aight good ... installation file is ready"
 sleep 0.5
-echo -ne "[ ${green}INFO${NC} ] Check permission : "
+echo -ne "[ ${BGreen}INFO${NC} ] Check permission : "
 
 PERMISSION
 if [ -f /home/needupdate ]; then
-red "Your script need to update first !"
+BGreen "Your script need to update first !"
 exit 0
 elif [ "$res" = "Permission Accepted..." ]; then
-green "Permission Accepted!"
+BGreen "Permission Accepted!"
 else
-red "Permission Denied!"
+BRed "Permission Denied!"
 rm setup.sh > /dev/null 2>&1
 sleep 0.5
 exit 0
@@ -163,9 +166,9 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
 clear
-red "Tambah Domain Untuk XRAY"
+BRed "Wajib Tambah Domain Untuk XRAY"
 echo " "
-read -rp "Input domain kamu : " -e dns
+read -rp "Wajib Input domain kamu : " -e dns
     if [ -z $dns ]; then
         echo -e "
         Nothing input for domain!
@@ -181,14 +184,14 @@ read -rp "Input domain kamu : " -e dns
     
 #install ssh ovpn
 echo -e "\e[33m-----------------------------------\033[0m"
-echo -e "$green      Install SSH Websocket           $NC"
+echo -e "$BGreen      Install SSH Websocket           $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
 wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/ssh-vpn.sh && chmod +x ssh-vpn.sh && ./ssh-vpn.sh
 #Instal Xray
 echo -e "\e[33m-----------------------------------\033[0m"
-echo -e "$green          Install XRAY              $NC"
+echo -e "$BGreen          Install XRAY              $NC"
 echo -e "\e[33m-----------------------------------\033[0m"
 sleep 0.5
 clear
