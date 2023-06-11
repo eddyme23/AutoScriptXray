@@ -11,12 +11,9 @@ NC='\e[0m'
 wget -qO- -O /etc/ssh/sshd_config https://raw.githubusercontent.com/givpn/autoscriptxray/master/sshd_config;
 systemctl restart sshd;
 clear;
-echo -e "Enter Password:";
-read -e pwe;
-usermod -p `perl -e "print crypt("$pwe","Q4")"` root;
-clear;
-printf "Please Save This VPS Account Information";
-if
+read -p "Enter Password : " pwe
+clear
+if [[ ! -z "${pwe}" ]]; then
 echo ""
 echo -e "\e[1;31m Please Save This VPS Account Information\e[0m"
 echo -e "\e[1;34m------------------------------------------\e[0m"
