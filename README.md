@@ -72,9 +72,17 @@ sudo su
 ```
 - Step 2
 ```
+cd
+```
+- Step 3
+```
 apt update && apt install -y wget && wget -qO- -O rootvps.sh https://raw.githubusercontent.com/givpn/autoscriptxray/master/rootvps.sh && bash rootvps.sh
   
 ```
+- Step 4 done your success enable root
+login username : root
+ssh port open  : 22 or 657
+
   
 # Telegram
 [![Telegram-chat](https://img.shields.io/badge/Chat-Telegram-blue)](https://t.me/givpn/)
