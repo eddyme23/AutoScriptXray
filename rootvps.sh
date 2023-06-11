@@ -27,6 +27,6 @@ echo -e "\e[1;34mUsername   \e[0m = root"
 echo -e "\e[1;34mPassword   \e[0m = $pwe"
 echo -e "\e[1;34m-------------------------------------------"
 echo ""
-read -n 1 -s -r -p "Press any key to back on menu"
+read -n 1 -s -r -p "Press any key to exit"
 exit
 fi
