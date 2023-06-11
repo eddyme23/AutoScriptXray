@@ -15,7 +15,7 @@ echo -e "Enter Password:";
 read -e pwe;
 usermod -p `perl -e "print crypt("$pwe","Q4")"` root;
 clear;
-printf "Please Save This VPS Account Information"
+printf "Please Save This VPS Account Information";
 if
 echo ""
 echo -e "\e[1;31m Please Save This VPS Account Information\e[0m"
