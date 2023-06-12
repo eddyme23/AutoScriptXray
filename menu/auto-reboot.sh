@@ -67,7 +67,7 @@ if [ ! -e /root/log-reboot.txt ]; then
     echo -e "\e[1;34m                  AUTO-REBOOT LOG                 \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""
-    echo "\e[1;31m    No reboot activity found \e[0m"
+    echo " No reboot activity found \e[0m"
     echo -e ""
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo ""
@@ -79,7 +79,7 @@ if [ ! -e /root/log-reboot.txt ]; then
     echo -e "\e[1;34m                   AUTO-REBOOT LOG         	   \e[0m"
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
     echo -e ""    
-	echo '\e[1;31m    LOG REBOOT \e[0m'
+	echo ' LOG REBOOT \e[0m'
 	cat /root/log-reboot.txt
     echo -e ""
     echo -e "\e[1;33m -------------------------------------------------\e[0m"
@@ -94,7 +94,7 @@ echo -e "\e[1;34m                  AUTO-REBOOT LOG                 \e[0m"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e ""  
 echo "" > /root/log-reboot.txt
-echo "\e[1;32m    Auto Reboot Log successfully deleted! \e[0m"
+echo " Auto Reboot Log successfully deleted! \e[0m"
 echo -e ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo ""
