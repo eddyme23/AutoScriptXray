@@ -166,15 +166,13 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
 clear
-wget -q "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
-clear
 BRed "Wajib Tambah Domain Untuk XRAY"
 echo " "
 read -rp "Wajib Input domain kamu : " -e dns
     if [ -z $dns ]; then
         echo -e "
-        Tidak memasukan domain...tenang
-        Domain random dibuatkan"
+        Domain kosong
+        perlu menambah Domain"
     else
         echo "$dns" > /root/scdomain
 	echo "$dns" > /etc/xray/scdomain
