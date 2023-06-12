@@ -2,7 +2,7 @@
 MYIP=$(curl -sS ipinfo.io/ip)
 echo "Checking VPS"
 #########################
-IZIN=$(curl -sS https://ipinfo.io/ip | awk '{print $4}' | grep $MYIP)
+IZIN=$(curl -sS ipinfo.io/ip)
 if [ $MYIP = $IZIN ]; then
 echo -e "\e[32mPermission Accepted...\e[0m"
 else
