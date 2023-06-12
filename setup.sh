@@ -173,8 +173,8 @@ echo " "
 read -rp "Wajib Input domain kamu : " -e dns
     if [ -z $dns ]; then
         echo -e "
-        Nothing input for domain!
-        Then a random domain will be created"
+        Tidak memasukan domain...tenang
+        Domain random dibuatkan"
     else
         echo "$dns" > /root/scdomain
 	echo "$dns" > /etc/xray/scdomain
