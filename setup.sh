@@ -4,7 +4,7 @@ biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
 BURIQ () {
-    curl -sS ipv4.icanhazip.com > /root/tmp
+    curl -sS https://ipinfo.io/ip > /root/tmp
     data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
     for user in "${data[@]}"
     do
@@ -20,7 +20,7 @@ BURIQ () {
     done
     rm -f  /root/tmp
 }
-MYIP=$(curl -sS ipv4.icanhazip.com)
+MYIP=$(curl -sS ipinfo.io/ip)
 Name=$givpn
 echo $Name > /usr/local/etc/.$Name.ini
 CekOne=$(cat /usr/local/etc/.$Name.ini)
@@ -37,8 +37,8 @@ fi
 }
 
 PERMISSION () {
-    MYIP=$(curl -sS ipv4.icanhazip.com)
-    IZIN=$(curl -sS ipv4.icanhazip.com | awk '{print $4}' | grep $MYIP)
+    MYIP=$(curl -sS ipinfo.io/ip)
+    IZIN=$(curl -sS https://ipinfo.io/ip | awk '{print $4}' | grep $MYIP)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
