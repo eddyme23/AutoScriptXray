@@ -99,18 +99,7 @@ echo -e "[ ${BGreen}INFO${NC} ] Aight good ... installation file is ready"
 sleep 0.5
 echo -ne "[ ${BGreen}INFO${NC} ] Check permission : "
 
-PERMISSION
-if
-BGreen "Your script need to update first !"
-exit 0
-elif [ "$res" = "Permission Accepted..." ]; then
-BGreen "Permission Accepted!"
-else
-BRed "Permission Denied!"
-rm setup.sh > /dev/null 2>&1
-sleep 0.5
-exit 0
-fi
+echo -e "$BGreen Permission Accepted!$NC"
 sleep 0.5
 
 mkdir -p /var/lib/ >/dev/null 2>&1
