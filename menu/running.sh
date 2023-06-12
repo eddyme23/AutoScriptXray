@@ -21,8 +21,6 @@ dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Dat
 biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
 #########################
 
-MYIP=$(curl -sS ipv4.icanhazip.com)
-
 red='\e[1;31m'
 green='\e[1;32m'
 NC='\e[0m'
@@ -41,8 +39,9 @@ basedong=$ID
 
 # VPS ISP INFORMATION
 echo -e "$ITAM"
-REGION=$( curl -s ipinfo.io/region )
-CITY=$( curl -s ipinfo.io/city )
+MYIP=$(curl -s ipinfo.io/org?token=ce3da57536810d )
+REGION=$( curl -s ipinfo.io/region?token=ce3da57536810d )
+CITY=$( curl -s ipinfo.io/city?token=ce3da57536810d )
 
 # CHEK STATUS
 tls_v2ray_status=$(systemctl status xray | grep Active | awk '{print $3}' | cut -d "(" -f2 | cut -d ")" -f1)
@@ -209,7 +208,7 @@ echo -e "\E[44;1;39m          ⇱ SUBSCRIPTION INFORMATION ⇲          \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "❇️ Client Name : $Name"
 echo -e "❇️ Exp Script  : $Exp"
-echo -e "❇️ Version     : Latest Version"
+echo -e "❇️ Version     : 1.0"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
 echo -e "\E[44;1;39m            ⇱ SERVICE INFORMATION ⇲             \E[0m"
 echo -e "${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m${NC}"
