@@ -38,7 +38,7 @@ fi
 
 PERMISSION () {
     MYIP=$(curl -sS ipinfo.io/ip)
-    IZIN=$(curl -sS https://ipinfo.io/ip | awk '{print $4}' | grep $MYIP)
+    IZIN=$(curl -sS ipinfo.io/ip)
     if [ "$MYIP" = "$IZIN" ]; then
     Bloman
     else
