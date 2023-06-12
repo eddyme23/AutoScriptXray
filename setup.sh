@@ -166,6 +166,8 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
 clear
+wget -q "https://raw.githubusercontent.com/givpn/AutoScriptXray/master/ssh/cf.sh" && chmod +x cf.sh && ./cf.sh
+clear
 BRed "Wajib Tambah Domain Untuk XRAY"
 echo " "
 read -rp "Wajib Input domain kamu : " -e dns
