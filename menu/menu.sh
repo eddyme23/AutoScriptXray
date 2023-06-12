@@ -2,8 +2,6 @@
 MYIP=$(curl -sS ipinfo.io/ip)
 echo "Checking VPS"
 clear
-Exp2=$Lifetime
-Name=$givpn
 # Color Validation
 DF='\e[39m'
 Bold='\e[1m'
@@ -54,6 +52,9 @@ tyest="$(vnstat -i eth0 | grep "yesterday" | awk '{print $8" "substr ($9, 1, 1)}
 dmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $3" "substr ($4, 1, 1)}')"
 umon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $6" "substr ($7, 1, 1)}')"
 tmon="$(vnstat -i eth0 -m | grep "`date +"%b '%y"`" | awk '{print $9" "substr ($10, 1, 1)}')"
+# user
+Exp2=$(Lifetime)
+Name=$(givpn)
 # Getting CPU Information
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
@@ -88,15 +89,6 @@ echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e ""
 echo -e "\e[1;32m RAM USED   \e[0m: $uram"	
 echo -e "\e[1;32m RAM TOTAL  \e[0m: $tram"
-echo -e ""
-echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e "\e[1;34m                   BANDWIDTH USAGE                \e[0m"
-echo -e "\e[1;33m -------------------------------------------------\e[0m"
-echo -e ""
-echo -e "\e[1;32m UPLOAD TODAY   \e[0m: $utoday"	
-echo -e "\e[1;32m DOWNLOAD TODAY \e[0m: $dtoday"
-echo -e "\e[1;32m TOTAL TODAY    \e[0m: $ttoday"
-echo -e "\e[1;32m TOTAL MONTH    \e[0m: $tmon"
 echo -e ""
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;34m                       MENU                       \e[0m"
