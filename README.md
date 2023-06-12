@@ -1,4 +1,5 @@
 # Langsung install Sayangku tanpa perlu daftar IP VPS
+# Pesan dariku baca sebelum mencoba....!!!
 </p> 
 <h2 align="center"> Supported Linux Distribution</h2>
 <p align="center"><img src="https://d33wubrfki0l68.cloudfront.net/5911c43be3b1da526ed609e9c55783d9d0f6b066/9858b/assets/img/debian-ubuntu-hover.png"></p> 
@@ -95,5 +96,17 @@ apt update && apt install wget -y && wget -qO- -O rootvps.sh https://raw.githubu
 
 # LICENSE
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+  
+# PERHATIAN BACA SECARA SEKSAMA
+- DILARANG DIPERJUAL BELIKAN KARENA SAYA MENDAPATKAN SECARA GRATIS DARI INTERNET
+- GUNAKAN SECARA BIJAK
+- STOP JUAL SCRIPT TANPA ENCRYPT KARENA ITU TERLALU TERBUKA UNTUK DIJADIKAN BISNIS
+# KELEBIHAN
+- SELAGI ADA YANG GRATIS KENAPA HARUS BELI SAYANG...?
+- FITUR BISA KAMU TAMBAH SENDIRI JIKA DIPERLUKAN CARANYA....? MULAILAH EXPERIMENT
+# PESAN AKHIR
+- PESAN INI DIBUAT UNTUK KAMU YA KAMU YANG MEMBACANYA
+- TERIMAKASIH SUDAH MELUANGKAN WAKTU UNTUK MEMBACA
 
+# LICENSI POLISI TIDUR
 ![profile views](https://komarev.com/ghpvc/?username=givpn11&color=blue)
