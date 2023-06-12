@@ -48,8 +48,11 @@
 - Shadowsocks gRPC : 443<br>
 <br>
 
+# Menu
+![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
+
 # Service Status
-![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/menu/image.png)
+![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/service.png)
 
 # PERHATIAN perlu masuk sebagai root
 - Step 1
