@@ -190,8 +190,8 @@ kernelku=$(uname -r)
 
 # DNS PATCH
 #tipeos2=$(uname -m)
-Name=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/AutoScriptXray | grep $MYIP | awk '{print $2}')
-Exp=$(curl -sS https://raw.githubusercontent.com/givpn/izin/master/AutoScriptXray | grep $MYIP | awk '{print $3}')
+Name=$(givpn)
+Exp=$(Lifetime)
 # GETTING DOMAIN NAME
 Domen="$(cat /etc/xray/domain)"
 echo -e ""
