@@ -44,7 +44,7 @@ basedong=$ID
 
 # VPS ISP INFORMATION
 echo -e "$ITAM"
-MYIP=$(curl -s ipinfo.io/org?token=ce3da57536810d )
+MYIP=$(curl -s ifconfig.me )
 REGION=$( curl -s ipinfo.io/region?token=ce3da57536810d )
 CITY=$( curl -s ipinfo.io/city?token=ce3da57536810d )
 
