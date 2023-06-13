@@ -1,5 +1,5 @@
 #!/bin/bash
-MYIP=$(curl -sS ipinfo.io/ip)
+MYIP=$(curl -sS ifconfig.me)
 echo "Checking VPS"
 clear
 # Color Validation
@@ -59,13 +59,13 @@ Name=$"givpn"
 cpu_usage1="$(ps aux | awk 'BEGIN {sum=0} {sum+=$3}; END {print sum}')"
 cpu_usage="$((${cpu_usage1/\.*} / ${corediilik:-1}))"
 cpu_usage+=" %"
-ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d | cut -d " " -f 2-10 )
-CITY=$(curl -s ipinfo.io/city?token=ce3da57536810d )
-WKT=$(curl -s ipinfo.io/timezone?token=ce3da57536810d )
+#ISP=$(curl -s ipinfo.io/org?token=ce3da57536810d | cut -d " " -f 2-10 )
+#CITY=$(curl -s ipinfo.io/city?token=ce3da57536810d )
+#WKT=$(curl -s ipinfo.io/timezone?token=ce3da57536810d )
 DAY=$(date +%A)
 DATE=$(date +%m/%d/%Y)
 DATE2=$(date -R | cut -d " " -f -5)
-IPVPS=$(curl -s ipinfo.io/ip?token=ce3da57536810d )
+IPVPS=$(curl -s ifconfig.me )
 cname=$( awk -F: '/model name/ {name=$2} END {print name}' /proc/cpuinfo )
 cores=$( awk -F: '/model name/ {core++} END {print core}' /proc/cpuinfo )
 freq=$( awk -F: ' /cpu MHz/ {freq=$2} END {print freq}' /proc/cpuinfo )
@@ -79,8 +79,8 @@ echo -e "\e[1;33m -------------------------------------------------\e[0m"
 echo -e "\e[1;32m OS            \e[0m: "`hostnamectl | grep "Operating System" | cut -d ' ' -f5-`	
 echo -e "\e[1;32m Uptime        \e[0m: $uptime"
 echo -e "\e[1;32m IP            \e[0m: $IPVPS"	
-echo -e "\e[1;32m ASN           \e[0m: $ISP"
-echo -e "\e[1;32m CITY          \e[0m: $CITY"
+#echo -e "\e[1;32m ASN           \e[0m: $ISP"
+#echo -e "\e[1;32m CITY          \e[0m: $CITY"
 echo -e "\e[1;32m DOMAIN        \e[0m: $domain"	
 echo -e "\e[1;32m DATE & TIME   \e[0m: $DATE2"
 echo -e "\e[1;33m -------------------------------------------------\e[0m"
