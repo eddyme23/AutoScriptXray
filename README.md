@@ -1,5 +1,5 @@
 # Langsung install Sayangku tanpa perlu daftar IP VPS
-# Pesan dariku baca sebelum mencoba....!!!
+# Pesan dariku baca terlebih dahulu sebelum memakai....!!!
 </p> 
 <h2 align="center"> Supported Linux Distribution</h2>
 <p align="center"><img src="https://d33wubrfki0l68.cloudfront.net/5911c43be3b1da526ed609e9c55783d9d0f6b066/9858b/assets/img/debian-ubuntu-hover.png"></p> 
@@ -10,14 +10,16 @@
   
 # Diperlukan
 <br>
-- DOMAIN (WAJIB)/RANDOM dari Script, NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering gonta ganti<br>
+- DOMAIN (WAJIB)/RANDOM dari Script<br>
+- NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering gonta ganti<br>
+- Untuk mengubah Domain di menu setelah install menggunakan domain sendiri bukan dari script lagi OK<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
 - RAM 1GB<br>
 <br>
 
-# Setting Cloudflare
+# Setting Cloudflare bagi yang punya Domain sendiri, kamu bisa cek di folder image untuk tampilan setting lainnya
 <br>
 - SSL/TLS : FULL<br>
 - SSL/TLS Recommender : OFF<br>
