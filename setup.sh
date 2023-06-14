@@ -131,7 +131,6 @@ clear
 	echo "$dom" > /etc/v2ray/domain
 	echo "$dom" > /root/domain
     echo "IP=$dom" > /var/lib/ipvps.conf
-	cp /root/domain /etc/xray/domain
     else 
     echo "Not Found Argument"
     exit 1
