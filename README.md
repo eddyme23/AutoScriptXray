@@ -10,7 +10,7 @@
   
 # Diperlukan
 <br>
-- DOMAIN (WAJIB)<br>
+- DOMAIN (WAJIB)/RANDOM dari Script<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
