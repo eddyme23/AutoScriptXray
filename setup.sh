@@ -110,7 +110,7 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
 clear
-    echo -e "$BBlue                     SETUP DOMAIN XRAY     $NC"
+    echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
     echo -e "$BGreen 1. Use Domain From Script / Gunakan Domain Dari Script $NC"
     echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
