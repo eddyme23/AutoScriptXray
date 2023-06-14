@@ -1,5 +1,5 @@
 #!/bin/bash
-# random domain
+# cari apa
 clear
 apt install jq curl -y
 DOMAIN=givpn.my.id
