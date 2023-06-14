@@ -119,3 +119,7 @@ apt update && apt install wget -y && wget -qO- -O rootvps.sh https://raw.githubu
 
 # LICENSI POLISI TIDUR
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+<p align="center">
+  <a><img src="https://img.shields.io/badge/givpn-AutoScriptXray%202023-blue" style="max-width:200%;">
+    </p>
