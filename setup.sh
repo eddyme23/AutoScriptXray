@@ -110,11 +110,11 @@ echo "IP=" >> /var/lib/ipvps.conf
 
 echo ""
 clear
-    echo -e "${BBlue}                    SETUP DOMAIN XRAY     ${NC}"
-    echo -e "${BYellow}----------------------------------------------------------${NC}"
-    echo "${BGreen}  1. Use Domain From Script / Gunakan Domain Dari Script${NC}"
-    echo "${BGreen}  2. Choose Your Own Domain / Gunakan Domain Sendiri${NC}"
-    echo -e "${BYellow}----------------------------------------------------------${NC}"
+    echo -e "$BBlue                     SETUP DOMAIN XRAY     $NC"
+    echo -e "$BYellow----------------------------------------------------------$NC"
+    echo -e "$BGreen 1. Use Domain From Script / Gunakan Domain Dari Script $NC"
+    echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
+    echo -e "$BYellow----------------------------------------------------------$NC"
     read -rp " Pilih domain yang akan kamu pakai : " dns
 	if test $dns -eq 1; then
     clear
