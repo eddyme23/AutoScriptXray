@@ -6,6 +6,7 @@ rm -rf /etc/v2ray/domain
 rm -rf /etc/xray/scdomain
 rm -rf /etc/v2ray/scdomain
 rm -rf /var/lib/ipvps.conf
+rm -rf /root/domain
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -47,6 +48,7 @@ touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
+touch /root/domain
 
 
 echo -e "[ ${BBlue}NOTES${NC} ] Before we go.. "
