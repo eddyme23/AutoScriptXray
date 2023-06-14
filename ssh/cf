@@ -4,7 +4,7 @@ clear
 apt install jq curl -y
 DOMAIN=givpn.my.id
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.givpn.my.id
+SUB_DOMAIN=xray-${sub}.givpn.my.id
 CF_ID=givpn11@gmail.com
 CF_KEY=0f738ffa9cdbbb44a0a0cd77c0411fa12343e
 set -euo pipefail
