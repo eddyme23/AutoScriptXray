@@ -17,6 +17,7 @@
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
 - RAM 1GB<br>
+- Rekomendasi Ubuntu 18 
 <br>
 
 # Setting Cloudflare bagi yang punya Domain sendiri, kamu bisa cek di folder image untuk tampilan setting lainnya
