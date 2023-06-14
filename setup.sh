@@ -6,7 +6,6 @@ rm -rf /etc/v2ray/domain
 rm -rf /etc/xray/scdomain
 rm -rf /etc/v2ray/scdomain
 rm -rf /var/lib/ipvps.conf
-rm -rf /root/domain
 clear
 red='\e[1;31m'
 green='\e[0;32m'
@@ -48,7 +47,6 @@ touch /etc/xray/domain
 touch /etc/v2ray/domain
 touch /etc/xray/scdomain
 touch /etc/v2ray/scdomain
-touch /root/domain
 
 
 echo -e "[ ${BBlue}NOTES${NC} ] Before we go.. "
@@ -121,7 +119,7 @@ echo ""
 clear
     echo -e "$BBlue                     SETUP DOMAIN VPS     $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
-    echo -e "$BGreen 1. Use Domain From Script / Gunakan Domain Dari Script $NC"
+    echo -e "$BGreen 1. Use Domain Random / Gunakan Domain Random $NC"
     echo -e "$BGreen 2. Choose Your Own Domain / Gunakan Domain Sendiri $NC"
     echo -e "$BYellow----------------------------------------------------------$NC"
     read -rp " Pilih domain yang akan kamu pakai : " dns
