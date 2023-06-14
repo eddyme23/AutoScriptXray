@@ -10,7 +10,7 @@
   
 # Diperlukan
 <br>
-- DOMAIN (WAJIB)/RANDOM dari Script<br>
+- DOMAIN (WAJIB)/RANDOM dari Script, NOTE domain dari script hanya dilakukan 1x saat proses install untuk mengurangi spam DOMAIN yang sering gonta ganti<br>
 - DEBIAN 9/10<br>
 - Ubuntu 18/20 LTS<br>
 - CPU MIN 1 CORE<br>
@@ -48,7 +48,19 @@
 - Trojan gRPC : 443<br>
 - Shadowsocks gRPC : 443<br>
 <br>
-
+  
+## Fitur
+<br>
+- Speedtest VPS<br>
+- Set Auto Reboot<br>
+- Restart All Service<br>
+- AUTO delete user Expired<br>
+- Cek Bandwith<br>
+- BBRPLUS<br>
+- DNS CHANGER<br>
+- DLL<br>
+<br>
+  
 # Menu
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
 
@@ -64,12 +76,12 @@ sudo su
 ```
 cd
 ```
-- Step 3 install
+- Step 3 INSTALL, NOTE jika sudah root langsung COPAS link dibawah ini saja ya
 ```
 sysctl -w net.ipv6.conf.all.disable_ipv6=1 && sysctl -w net.ipv6.conf.default.disable_ipv6=1 && apt update && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/givpn/AutoScriptXray/master/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
 ```
 
-# Buat root di VPS
+# Buat root di VPS bagi kamu yang login ke server masih menggunakan username yang bukan root
 - Step 1
 ```
 sudo su
@@ -97,8 +109,10 @@ apt update && apt install wget -y && wget -qO- -O rootvps.sh https://raw.githubu
 # PERHATIAN BACA SECARA SEKSAMA
 - DILARANG DIPERJUAL BELIKAN KARENA SAYA MENDAPATKAN SECARA GRATIS DARI INTERNET
 - GUNAKAN SECARA BIJAK
+- NONTON UNYIL DOSA TANGGUNG SENDIRI YA
 # PESAN AKHIR
-- TERIMAKASIH SUDAH MELUANGKAN WAKTU UNTUK MEMBACA
+- TERIMAKASIH SUDAH MELUANGKAN WAKTU UNTUK MEMBACA DAN MAAF BILA ADA KATA-KATA YANG TIDAK SEMPURNA
+- KARENA SAYA JUGA MANUSIA YANG TIDAK LUPUT DARI KESALAHAN
 
 # LICENSI POLISI TIDUR
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
