@@ -64,6 +64,7 @@
 - BBRPLUS<br>
 - DNS CHANGER<br>
 - DLL<br>
+- auto backup tidak ada ? ya atau dihilangkan permanent<br>
 <br>
   
 # Menu
