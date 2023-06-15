@@ -52,6 +52,8 @@
 - Shadowsocks gRPC : 443<br>
 <br>
   
+# slowdns bisa kamu install di folder update opsional hanya jika diperlukan
+  
 ## Fitur
 <br>
 - Speedtest VPS<br>
