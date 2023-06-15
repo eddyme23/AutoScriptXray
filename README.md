@@ -52,7 +52,8 @@
 - Shadowsocks gRPC : 443<br>
 <br>
   
-# slowdns bisa kamu install di folder update opsional hanya jika diperlukan
+# slowdns bisa kamu install setelah terpasang autoscriptxray hanya jika diperlukan
+[SLOWDNS](https://github.com/givpn/AutoScriptXray/tree/master/update%20opsional)
   
 ## Fitur
 <br>
