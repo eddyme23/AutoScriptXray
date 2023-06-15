@@ -120,7 +120,7 @@ apt update && apt install wget -y && wget -qO- -O rootvps.sh https://raw.githubu
 - TERIMAKASIH SUDAH MELUANGKAN WAKTU UNTUK MEMBACA DAN MAAF BILA ADA KATA-KATA YANG TIDAK SEMPURNA
 - KARENA SAYA JUGA MANUSIA YANG TIDAK LUPUT DARI KESALAHAN
 
-# LICENSI POLISI TIDUR
+# LICENSI CAP BOTOL BEKAS
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 <p align="center">
