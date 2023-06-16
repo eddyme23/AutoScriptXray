@@ -53,17 +53,15 @@
 <br>
   
 ## Fitur
-<br>
-- Speedtest VPS<br>
-- Set Auto Reboot<br>
-- Restart All Service<br>
-- AUTO delete user Expired<br>
-- Cek Bandwith<br>
-- BBRPLUS<br>
-- DNS CHANGER<br>
-- DLL<br>
-- auto backup tidak ada ? ya... dihilangkan permanent<br>
-<br>
+- Speedtest VPS
+- Set Auto Reboot
+- Restart All Service
+- AUTO delete user Expired
+- Cek Bandwith
+- BBRPLUS version 1.4.0 by [Chikage0o0](https://github.com/Chikage0o0/Linux-NetSpeed/blob/master/tcp.sh)
+- DNS CHANGER
+- DLL
+- auto backup tidak ada ? ya... dihilangkan permanent
   
 # Menu
 ![Service Status](https://raw.githubusercontent.com/givpn/AutoScriptXray/master/image/menu.png)
