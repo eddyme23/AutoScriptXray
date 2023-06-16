@@ -54,7 +54,7 @@
 <br>
   
 ## Fitur
-- Speedtest VPS
+- Speedtest VPS by [Ookla](https://speedtest.net)
 - Set Auto Reboot
 - Restart All Service
 - AUTO delete user Expired
