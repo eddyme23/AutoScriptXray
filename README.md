@@ -20,7 +20,7 @@
 - Rekomendasi Ubuntu 18 
 <br>
 
-# Setting Cloudflare bagi yang punya Domain sendiri, kamu bisa cek di folder image untuk tampilan setting lainnya
+# Setting Cloudflare bagi yang punya Domain sendiri, kamu bisa cek di folder [image](https://github.com/givpn/AutoScriptXray/tree/master/image) untuk tampilan setting lainnya
 <br>
 - SSL/TLS : FULL<br>
 - SSL/TLS Recommender : OFF<br>
