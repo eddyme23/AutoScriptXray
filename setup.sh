@@ -7,6 +7,20 @@ rm -rf /etc/xray/scdomain
 rm -rf /etc/v2ray/scdomain
 rm -rf /var/lib/ipvps.conf
 clear
+cd
+cd /usr/bin
+rm -rf m-sshovpn
+rm -rf m-vmess
+rm -rf m-vless
+rm -rf m-ssws
+rm -rf m-trojan
+rm -rf usernew
+rm -rf add-ssws
+rm -rf add-tr
+rm -rf add-ws
+rm -rf add-vless
+cd
+clear
 red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
